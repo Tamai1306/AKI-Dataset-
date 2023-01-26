@@ -1,0 +1,2 @@
+# AKI-Dataset-
+Kanji Dataset
