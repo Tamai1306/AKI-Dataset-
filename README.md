@@ -11,8 +11,12 @@ The repository contains 19 main files:
 - 1 CSV file - AKI_Dataset20230110.csv This file include vital information about the AKI-Dataset
 
 ## Usage
-To extract the zipped multi-file archive the following bash command has to be ran:
+To extract the zipped multi-file archive first the multiple files has to be combined into a single one using the zip command, and then using the unzip command, it will extracted. Type the following command to combine the file :
 ```bash
-$ unzip Images20230110.zip -d ./Images
+$ zip -F Images20230110.zip --out AKI-Images.zip
 ```
-
+This command will produce a file named AKI-Image.zip which is the combined form of all the parts of the separated zip file. Now to uncompress, use the following command :
+```bash
+$ unzip AKI-Images.zip
+```
+This will generate a directory called Images where all the characters images will be unzipped.
